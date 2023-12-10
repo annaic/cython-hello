@@ -1,13 +1,13 @@
 .PHONY : pyfib
-pyfib:
+pyrun:
 	python fib.py 35 5
 
-.PHONY : cyfib-build
-cyfib-build:
+.PHONY : build
+build:
 	python setup.py build_ext --inplace
 
-.PHONY : cyfib-run
-cyfib-run:cyfib-build
+.PHONY : run
+run:build
 	python cyfib_wrap.py 35 3
 
 

@@ -5,11 +5,11 @@
 ### Pure python version
 
 ```shell
-make pyfib
+make pyrun
 ```
 
 ### Cython version
 
 ```shell
-make cyfib-run
+make run
 ```
